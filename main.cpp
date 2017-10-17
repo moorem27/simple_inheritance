@@ -1,11 +1,15 @@
 #include "animal.h"
 #include "dog.h"
+#include "cat.h"
 #include <memory>
 
 int main() {
-    std::shared_ptr<Animal> animal = std::make_shared<Animal>();
-    std::shared_ptr<Animal> dog    = std::make_shared<Dog>();
+    std::unique_ptr<Animal> animal = std::make_unique<Animal>();
+    std::unique_ptr<Animal> dog    = std::make_unique<Dog>();
+    std::unique_ptr<Animal> cat    = std::make_unique<Cat>();
+
     animal->eat();
+    cat->eat();
     dog->eat();
 
     return 0;

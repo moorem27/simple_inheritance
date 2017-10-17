@@ -5,7 +5,7 @@
 
 class Dog : public Animal {
 public:
-    void eat();
+    void eat() override;
 };
 
 

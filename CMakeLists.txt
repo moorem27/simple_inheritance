@@ -5,5 +5,5 @@ include_directories(include)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp dog.cpp )
+set(SOURCE_FILES main.cpp dog.cpp cat.cpp)
 add_executable(polymorphism ${SOURCE_FILES})
